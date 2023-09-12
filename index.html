@@ -1,0 +1,61 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mailto:sg707012@gmail.com" method="post" enctype="text/plain">
+        <h3>Your Personal Details</h3><br>
+        Enter Name- <input type="text" name="Name"><br><br>
+        Age- <input type="number" number="Number"><br><br>
+        Date Of Birth- <input type="date"><br><br>
+        Adress- <input type="text"><br><br>
+        Enter Mobile Number- <input type="number"><br><br>
+        Enter your Mail Id- <input type="email">
+        <br><br><br>
+        <h2>What Are You Currently Doing-</h2> <br>
+        <label for="Student">
+            studying
+        </label>
+        <input type="radio" name="Occupation" id="student" value="study">
+        <label for="Business">
+            Business
+
+        </label>
+        <input type="radio" name="Occupation" id="Business" value="Business">
+        <label for="Teacher">
+            Teaching
+        </label>
+        <input type="radio" name="Occupation" id="Teacher" value="Teacher">
+           <br>
+           <h3>Your Qualifications-</h3> <br>
+        <label for="Qualifications-">Qualifications</label>
+        <select name="" id="Qualifications-">
+            <option value="">10+2</option>
+            <option value="">PHD</option>
+            <option value="">Bachlor</option>
+            <option value="">Master</option>
+
+        </select>
+        <br><br>
+        <label for="other information">Experience</label>
+        <select name="" id="other information">
+            <option value="Fresher">Fresher</option>
+            <option value="Experienced">More than 2 years of Experience </option>
+        </select>
+        <br><br>
+        <input type="submit" name="send">    
+        <input type="reset" name="reset">    
+    </form>
+</body>
